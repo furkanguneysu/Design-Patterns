@@ -5,17 +5,18 @@ package Creational.Singleton;
  */
 public class Singleton {
 
-    private static Singleton instance = null;
+    private static Singleton instance = new Singleton();
     
     private Singleton(){
 
     }
 
-    public static Singleton getSingleton(){
-        if(instance == null){
-            instance = new Singleton();
-        }
+    public static Singleton getInstance(){
         return instance;
+    }
+
+    public void showMessage(){
+        System.out.println("Hello World!");
     }
     
 }
