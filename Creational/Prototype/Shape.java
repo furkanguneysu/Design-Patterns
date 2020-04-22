@@ -15,6 +15,10 @@ public abstract class Shape implements Cloneable{
         return id;
     }
 
+    public void setId(String id){
+        this.id = id;
+    }
+
     public Object clone(){
         Object clone = null;
         try{
